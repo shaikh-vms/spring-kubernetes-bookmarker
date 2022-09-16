@@ -14,7 +14,7 @@ import lombok.Setter;
 public class BookmarkDTO {
 
 	private List<Bookmark> data;
-	private int totalElements;
+	private long totalElements;
 	private int totalPages;
 	private int currentPage;
 	private boolean isFirst;
@@ -24,9 +24,9 @@ public class BookmarkDTO {
 
 	public BookmarkDTO(Page<Bookmark> page) {
 		this.setData(page.getContent());
-		this.setTotalElements(page.getNumberOfElements());
+		this.setTotalElements(page.getTotalElements());
 		this.setTotalPages(page.getTotalPages());
-		this.setCurrentPage(page.getNumber());
+		this.setCurrentPage(page.getNumber() + 1);
 		this.setFirst(page.isFirst());
 		this.setLast(page.isLast());
 		this.setHasNext(page.hasNext());
