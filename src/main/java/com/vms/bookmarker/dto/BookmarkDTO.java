@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.springframework.data.domain.Page;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import com.vms.bookmarker.entity.Bookmark;
 
 import lombok.Getter;
@@ -17,8 +18,13 @@ public class BookmarkDTO {
 	private long totalElements;
 	private int totalPages;
 	private int currentPage;
+
+	@JsonProperty("isFirst")
 	private boolean isFirst;
+
+	@JsonProperty("isLast")
 	private boolean isLast;
+
 	private boolean hasNext;
 	private boolean hasPrevious;
 
