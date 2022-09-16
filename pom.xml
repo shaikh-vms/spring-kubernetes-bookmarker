@@ -8,7 +8,7 @@
 		<version>2.7.3</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.sivalabs</groupId>
+	<groupId>com.vms</groupId>
 	<artifactId>bookmarker-api</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>bookmarker-api</name>

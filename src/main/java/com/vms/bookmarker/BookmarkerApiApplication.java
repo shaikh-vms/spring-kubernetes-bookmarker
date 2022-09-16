@@ -1,4 +1,4 @@
-package com.sivalabs.bookmarker;
+package com.vms.bookmarker;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
